@@ -37,16 +37,24 @@ x-blockscout-ref:
     - DATABASE_URL=postgresql://postgres:postgres@blockscoutpostgres:5432/postgres?ssl=false
     - POSTGRES_PASSWORD=postgres
     - POSTGRES_USER=postgres
-    - NETWORK=quickstart
-    - NETWORK=Dev Quickstart
-    - SUBNETWORK=Quorum
-    - CHAIN_ID=1337
+    - NETWORK=Digipatra
+    - NETWORK=Besu
+    - SUBNETWORK=IBFT2
+    - CHAIN_ID=17892589
     - COIN=ETH
     - ETHEREUM_JSONRPC_VARIANT=besu
     - ETHEREUM_JSONRPC_TRANSPORT=http
     - ETHEREUM_JSONRPC_HTTP_URL=http://rpcnode:8545
     - ETHEREUM_JSONRPC_TRACE_URL=http://rpcnode:8545
     - ETHEREUM_JSONRPC_WS_URL=ws://rpcnode:8546
+    - LINK_TO_OTHER_EXPLORERS=false
+    - OTHER_EXPLORERS={}
+    - SUPPORTED_CHAINS={}
+    - LOGO=/images/digipatra.svg
+    - LOGO_FOOTER=/images/digipatra_light.svg
+  volumes:
+    - ./blockscout/digipatra.svg:/images/digipatra.svg
+    - ./blockscout/digipatra_light.svg:/images/digipatra_light.svg
   entrypoint:
     - /bin/sh
     - -c
@@ -85,7 +93,7 @@ x-ethsignerProxy-def:
   &ethsignerProxy-def
   image: consensys/quorum-ethsigner:${ETHSIGNER_VERSION:-latest}
   command: [
-    "--chain-id=1337",
+    "--chain-id=17892589",
     "--http-listen-host=0.0.0.0",
     "--downstream-http-port=8545",
     "--downstream-http-host=rpcnode",
