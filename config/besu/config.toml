@@ -4,7 +4,7 @@ node-private-key-file="/opt/besu/keys/nodekey"
 logging="INFO"
 data-path="/opt/besu/data"
 host-allowlist=["*"]
-min-gas-price=0
+min-gas-price=1000
 
 # rpc
 rpc-http-enabled=true
