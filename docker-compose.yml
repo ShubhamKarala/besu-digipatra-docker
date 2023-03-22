@@ -52,9 +52,6 @@ x-blockscout-ref:
     - SUPPORTED_CHAINS={}
     - LOGO=/images/digipatra.svg
     - LOGO_FOOTER=/images/digipatra_light.svg
-  volumes:
-    - ./blockscout/digipatra.svg:/images/digipatra.svg
-    - ./blockscout/digipatra_light.svg:/images/digipatra_light.svg
   entrypoint:
     - /bin/sh
     - -c
