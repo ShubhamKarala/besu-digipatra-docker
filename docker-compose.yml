@@ -37,9 +37,8 @@ x-blockscout-ref:
     - DATABASE_URL=postgresql://postgres:postgres@blockscoutpostgres:5432/postgres?ssl=false
     - POSTGRES_PASSWORD=postgres
     - POSTGRES_USER=postgres
-    - NETWORK=Digipatra
-    - NETWORK=Besu
-    - SUBNETWORK=IBFT2
+    - NETWORK=IBFT2
+    - SUBNETWORK=DigiPatra
     - CHAIN_ID=17892589
     - COIN=ETH
     - ETHEREUM_JSONRPC_VARIANT=besu
@@ -51,7 +50,7 @@ x-blockscout-ref:
     - OTHER_EXPLORERS={}
     - SUPPORTED_CHAINS={}
     - LOGO=/images/digipatra.svg
-    - LOGO_FOOTER=/images/digipatra_light.svg
+    - LOGO_FOOTER=/images/digipatra.svg
   entrypoint:
     - /bin/sh
     - -c
