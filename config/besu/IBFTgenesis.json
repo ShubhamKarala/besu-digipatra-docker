@@ -11,7 +11,7 @@
       "blockperiodseconds" : 2,
       "epochlength" : 30000,
       "requesttimeoutseconds" : 4,
-      "blockreward": 5000000000000000,
+      "blockreward": "5000000000000000",
       "miningbeneficiary": "0x6540b13DEe19d1a0A7d77592e05bAdAFfE0eb065"
     }
   },
