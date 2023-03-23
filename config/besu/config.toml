@@ -6,10 +6,6 @@ data-path="/opt/besu/data"
 host-allowlist=["*"]
 min-gas-price=1000
 
-# Transaction Pool
-tx-pool-retention-hours=750
-tx-pool-max-size=1024
-
 # rpc
 rpc-http-enabled=true
 rpc-http-host="0.0.0.0"
